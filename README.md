@@ -1,6 +1,8 @@
 
 # SixLabors.Shapes
 
+[![Join the chat at https://gitter.im/SixLabors_Shapes/Lobby](https://badges.gitter.im/SixLabors_Shapes/Lobby.svg)](https://gitter.im/SixLabors_Shapes/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 **SixLabors.Shapes** is a new cross-platform 2D polygon manipulation AP.
 
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/SixLabors/Shapes/master/APACHE-2.0-LICENSE.txt)
