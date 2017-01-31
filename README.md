@@ -1,9 +1,10 @@
 
 # SixLabors.Shapes
 
-[![Join the chat at https://gitter.im/SixLabors/Shapes](https://badges.gitter.im/SixLabors/Shapes.svg)](https://gitter.im/SixLabors/Shapes?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 **SixLabors.Shapes** is a new cross-platform 2D polygon manipulation AP.
+
+
+[![Join the chat at https://gitter.im/SixLabors/Shapes](https://badges.gitter.im/SixLabors/Shapes.svg)](https://gitter.im/SixLabors/Shapes?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/SixLabors/Shapes/master/APACHE-2.0-LICENSE.txt)
 [![GitHub issues](https://img.shields.io/github/issues/SixLabors/Shapes.svg)](https://github.com/SixLabors/Shapes/issues)
