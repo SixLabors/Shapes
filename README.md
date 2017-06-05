@@ -1,6 +1,8 @@
 
 #  <img src="icons/icon.png" width="52" height="52" /> SixLabors.Shapes
 
+[![Join the chat at https://gitter.im/SixLabors_Shapes/Lobby](https://badges.gitter.im/SixLabors_Shapes/Lobby.svg)](https://gitter.im/SixLabors_Shapes/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 **SixLabors.Shapes** is a new cross-platform 2D polygon manipulation AP.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/nvsaxcjb80cgp898/branch/master?svg=true)](https://ci.appveyor.com/project/tocsoft/shaper2d/branch/master)
