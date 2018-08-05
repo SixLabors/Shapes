@@ -50,10 +50,10 @@ namespace SixLabors.Shapes.Text
         }
 
         /// <inheritdoc/>
-        bool IGlyphRenderer.BeginGlyph(RectangleF rect, int hashCode)
+        bool IGlyphRenderer.BeginGlyph(RectangleF bounds, GlyphRendererParameters paramaters)
         {
             this.builder.Clear();
-            this.BeginGlyph(rect);
+            this.BeginGlyph(bounds);
             return true;
         }
 
