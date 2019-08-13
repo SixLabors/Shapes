@@ -16,15 +16,16 @@ namespace SixLabors.Shapes
         /// </summary>
         /// <param name="shape">The shape.</param>
         /// <param name="holes">The holes.</param>
+        /// <param name="fillType">The fillType.</param>
         /// <returns>Returns a new shape with the holes cliped out out the shape.</returns>
-        public static IPath Clip(this IPath shape, IEnumerable<IPath> holes)
+        public static IPath Clip(this IPath shape, IEnumerable<IPath> holes, FillType fillType = FillType.EvenOdd)
         {
             var clipper = new Clipper();
 
             clipper.AddPath(shape, ClippingType.Subject);
             clipper.AddPaths(holes, ClippingType.Clip);
 
-            IPath[] result = clipper.GenerateClippedShapes();
+            IPath[] result = clipper.GenerateClippedShapes(fillType);
 
             return new ComplexPolygon(result);
         }
