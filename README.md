@@ -1,3 +1,8 @@
+The contents of this repo have been intergated directly into https://github.com/SixLabors/ImageSharp.Drawing 
+
+------------
+
+
 <h1 align="center">
 
 <img src="https://raw.githubusercontent.com/SixLabors/Branding/master/icons/shapes/sixlabors.shapes.512.png" alt="SixLabors.Shapes" width="256"/>
