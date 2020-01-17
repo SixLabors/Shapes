@@ -40,16 +40,17 @@ namespace SixLabors.Shapes.PolygonClipper
         /// <summary>
         /// Executes the specified clip type.
         /// </summary>
+        /// <param name="fillType">The fillType.</param>
         /// <returns>
         /// Returns the <see cref="IPath" /> array containing the converted polygons.
         /// </returns>
-        public IPath[] GenerateClippedShapes()
+        public IPath[] GenerateClippedShapes(FillType fillType = FillType.EvenOdd)
         {
             var results = new List<PolyNode>();
 
             lock (this.syncRoot)
             {
-                this.innerClipper.Execute(ClipType.ctDifference, results);
+                this.innerClipper.Execute(ClipType.ctDifference, results, Convert(fillType));
             }
 
             var shapes = new IPath[results.Count];
@@ -151,6 +152,22 @@ namespace SixLabors.Shapes.PolygonClipper
             lock (this.syncRoot)
             {
                 this.innerClipper.AddPath(points, type, path.IsClosed);
+            }
+        }
+
+        private static PolyFillType Convert(FillType type)
+        {
+            switch (type)
+            {
+                case FillType.NonZero:
+                    return PolyFillType.pftNonZero;
+                case FillType.Positive:
+                    return PolyFillType.pftPositive;
+                case FillType.Negative:
+                    return PolyFillType.pftNegative;
+                case FillType.EvenOdd:
+                default:
+                    return PolyFillType.pftEvenOdd;
             }
         }
     }
